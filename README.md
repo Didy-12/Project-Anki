@@ -58,10 +58,10 @@ Voici un exemple apres insertion d'une lecon et des flashcard attibué.
 Dans le page de revision nous pouvons visualiser les differentes lecons qui ont été crée le bouton "study" nous permet de commencer une session de revision et le bouton"Show progress nous permet d'obtenir un graphe retracant notre avancement dans les revison.
 <img width="1440" alt="Capture d’écran 2023-12-30 à 15 45 06" src="https://github.com/Didy-12/Project-Anki/assets/120495158/9190f857-fe3c-42b7-b38c-4d801a1226e8">
 
-
+En appuyant sur le bouton"study" la session de revison comment et la premier question apparait sur l'ecran.
 <img width="1434" alt="Capture d’écran 2023-12-30 à 15 45 47" src="https://github.com/Didy-12/Project-Anki/assets/120495158/4f8850c6-8af2-4542-beaa-3fadeec080ff">
 
-
+En appuyant sur le bouton "Show answer" la reponse s'affiche avec la possibilité de mettre si on a bon ou faux afin que l'algorithme puisse calculer notre pourcentage de reussite.
 <img width="741" alt="Capture d’écran 2023-12-30 à 15 46 23" src="https://github.com/Didy-12/Project-Anki/assets/120495158/95e81567-64df-4506-bba0-e98045bdf031">
 
 
