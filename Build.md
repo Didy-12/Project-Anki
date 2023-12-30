@@ -12,6 +12,8 @@ Navigate to the frontend directory: ./Project_Anki/Frontend.
 
 Install dependencies: npm install.
 
+Install chart.js: npm install chart.js
+
 Launch the frontend: Execute ng serve.
 
 Access the app: Navigate to http://localhost:4200/. The app will auto-reload on source file changes.
