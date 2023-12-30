@@ -5,7 +5,7 @@ Il fut développé par une équipe de 5 étudiants :
   Ludovic GREAU
   Kerian HUERTAS 
   Alexis MINOST
-Le projet fut uploadé sur github par Kerian HUERTAS suite à des difficultés dans la gestion du précédent repository github le rendant impropre à un rendu.
+Le projet fut uploadé sur github par Heddy DAOUR suite à des difficultés dans la gestion du précédent repository github le rendant impropre à un rendu.
 
 # Rapport sur la Plateforme d'Apprentissage Flashcard
 
