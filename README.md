@@ -42,7 +42,7 @@ Tout d'abord popur acceder a la page de création de lecon il faut cliquer dans 
 
 <img width="274" alt="Capture d’écran 2023-12-30 à 15 45 21" src="https://github.com/Didy-12/Project-Anki/assets/120495158/b92e6090-256c-4e88-b68f-f7e458ebf01b">
 
-Sur cette page, les utilisateurs peuvent ajouter de nouvelles leçons. Ils ont la possibilité d'entrer un titre, une desction,une categroie et un niveau de diffuclté pour chaque leçon .Une fois la lecon crée l'utilisateur peut commencer à ajouter du contenu sous forme de flashcards.
+Sur cette page, les utilisateurs peuvent ajouter de nouvelles leçons. Ils ont la possibilité d'entrer un titre, une description,une categroie et un niveau de diffuclté pour chaque leçon .Une fois la lecon crée l'utilisateur peut commencer à ajouter du contenu sous forme de flashcards.
 
 <img width="1440" alt="Capture d’écran 2023-12-30 à 12 33 02" src="https://github.com/Didy-12/Project-Anki/assets/120495158/1986ead9-4cdc-458a-9825-43f1edced62f">
 
