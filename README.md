@@ -15,6 +15,9 @@ Le projet fut uploadé sur github par Heddy DAOUR suite à des difficultés dans
 
 La page d'accueil sert de point d'entrée sur la plateforme. Elle offre généralement un aperçu des fonctionnalités disponibles dans la nav bar et donne accès rapide aux différentes sections de la plateforme.
 
+<img width="1440" alt="Capture d’écran 2023-12-30 à 16 12 54" src="https://github.com/Didy-12/Project-Anki/assets/120495158/8bd304cb-3ce4-4292-be04-db5351cee21e">
+
+
 ## Page de Connexion
 
 La page de connexion est essentielle pour sécuriser l'accès à la plateforme. Les utilisateurs doivent entrer leur nom d'utilisateur et mot de passe pour accéder à leur compte personnel et à leur contenu.
