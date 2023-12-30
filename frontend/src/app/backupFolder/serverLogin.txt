@@ -1,0 +1,18 @@
+// Route pour l'inscription
+app.post('/inscription', async (req: Request, res: Response) => {
+  const { username, password } = req.body;
+  try {
+    const result = await pool.query(
+      'INSERT INTO users(username, password) VALUES($1, $2) RETURNING *',
+      [username, password]
+    );
+    res.json(result.rows[0]);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Erreur lors de l'inscription");
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Le serveur est en cours d'exécution sur le port ${port}`);
+});

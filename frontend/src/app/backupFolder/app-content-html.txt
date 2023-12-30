@@ -1,0 +1,83 @@
+This is your new main app page
+It should contain Header, menu
+<router-outlet></router-outlet>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LessonPackage</title>
+</head>
+<body>
+  <form>
+    <div class=”container”>
+        <div class=”col-md-3”>
+          <label for="ftitle">Title</label>
+        </div>
+        <div class=”col-md-9”>
+          <input type="text" id="ftitle">
+        </div>
+
+        <div class=”col-md-3”>
+          <label for="fdesc">Description</label>
+        </div>
+
+        <div class=”col-md-9”>
+          <input type="text" id="fdesc">
+        </div>
+
+        <div class=”col-md-3”>
+          <label for="fcat">Category</label>
+        </div>
+        <div class=”col-md-9”>
+          <input type="text" id="fcat">
+        </div>
+
+        <div class=”col-md-3”>
+          <label for="flevel">Level</label>
+        </div>
+
+        <div class=”col-md-9”>
+          <input type="text" id="flevel">
+        </div>
+
+        <div class=”col-md-3”>
+          <label for="fprereq">Prerequisite</label>
+        </div>
+
+        <div class=”col-md-9”>
+          <input type="text" id="fprereq">
+        </div>
+
+        <div class=”col-md-3”>
+          <div *ngFor="let item of stringArray; let il = index">
+            <label [for]="'fprereq2'+ i">Prereq2 {{i+1}}</label>
+          </div>
+        </div>
+
+        <div class=”col-md-9”>
+            <input type="text" [id]="'fprereq2' + i" [(ngModel)]="stringArray[i]" name="fprereq2{{i}}">
+        </div>
+
+        <div class=”col-md-3”>
+          <label for="ftags">Tags</label>
+        </div>
+
+        <div class=”col-md-9”>
+          <input type="text" id="ftags">
+        </div>
+
+        <div class=”col-md-3”>
+          <label for="fcopyright">Copyright</label>
+        </div>
+        <div class=”col-md-3”>
+          <input type="text" id="fcopyright">
+        </div>
+
+    </div>
+  </form>
+
+</body>
+</html>
+And then footer

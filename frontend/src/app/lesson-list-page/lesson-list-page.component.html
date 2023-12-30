@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Learning Platform</title>
+
+</head>
+<body>
+<header>
+  <h1>Flashcard Learning Platform</h1>
+</header>
+
+<div>
+  <label class="col-md-1" for="category">Lecon Title</label>
+  <input type="text" [(ngModel)]="lessonTitle" placeholder="Enter Lesson Title">
+  <div class="row mt-2">
+    <label class="col-md-1" for="description">Description</label>
+    <textarea id="description" class="col-11" rows="4"></textarea>
+  </div>
+  <div class="row mt-2">
+    <label class="col-md-1" for="category">Category</label>
+    <input id="category" type="text" class="col-md-2">
+    <label class="col-md-1" for="level" ngbTooltip="Enter value between
+1(basics) to 10(advanced)" placement="top">Level</label>
+    <input id="level" type="number" class="col-md-1" min="1" max="10">
+  </div>
+  <button (click)="addLesson()">Add Lesson</button>
+</div>
+
+
+
+
+<div>
+  <input type="text" [(ngModel)]="question" placeholder="Enter Question">
+  <input type="text" [(ngModel)]="answer" placeholder="Enter Answer">
+  <button (click)="addFlashcard()">Add Flashcard</button>
+</div>
+
+<div *ngFor="let lesson of lessons">
+  <h3>{{ lesson.title }}</h3>
+  <div *ngFor="let flashcard of lesson.flashcards">
+    Q: {{ flashcard.question }} - A: {{ flashcard.answer }}
+  </div>
+</div>
+
+</body>
+</html>

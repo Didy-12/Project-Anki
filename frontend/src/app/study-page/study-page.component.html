@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flashcards</title>
+  <link rel="stylesheet" href="study-page.component.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Study Flashcards</h1>
+  </header>
+
+  <div class="lessons">
+    <div *ngFor="let lesson of lessons; let i = index">
+      <h3>{{ lesson.title }}</h3>
+      <button (click)="studyLesson(i)">Study</button>
+    </div>
+  </div>
+
+  <div *ngIf="currentLessonIndex !== null" class="study-area">
+    <div class="flashcard">
+      <p class="question">Q: {{ getCurrentQuestion() }}</p>
+      <p *ngIf="showAnswerFlag" class="answer">A: {{ getCurrentAnswer() }}</p>
+      <button (click)="showAnswer()" *ngIf="!showAnswerFlag">Show Answer</button>
+      <button (click)="nextQuestion()">Next</button>
+    </div>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

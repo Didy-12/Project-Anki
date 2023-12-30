@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemple de code HTML avec JavaScript</title>
+</head>
+<body>
+
+<h1>Exemple de code HTML avec JavaScript</h1>
+
+<button id="clickButton">Click Me</button>
+<p id="lastClickedText">Last clicked: </p>
+<p id="lastClickDate"></p>
+
+<input id="input" type="text" placeholder="Enter text">
+<ul id="list"></ul>
+
+<script>
+    var message = "Bonjour !";
+    console.log(message);
+
+    var enteredText = prompt("Veuillez entrer un texte:");
+
+    if (enteredText !== null) {
+        console.log("Entrée de l'utilisateur:", enteredText);
+
+        alert("Vous avez entré : " + enteredText);
+    } else {
+        console.log("L'utilisateur a annulé la saisie.");
+    }
+
+    var button = document.getElementById("clickButton");
+
+    var lastClickedTextElement = document.getElementById("lastClickedText");
+    var lastClickDateElement = document.getElementById("lastClickDate");
+
+    function handleClick() {
+        var currentDate = new Date();
+
+        var formattedDate = currentDate.getFullYear() + "/" +
+            (currentDate.getMonth() + 1).toString().padStart(2, "0") + "/" +
+            currentDate.getDate().toString().padStart(2, "0") + " " +
+            currentDate.getHours().toString().padStart(2, "0") + ":" +
+            currentDate.getMinutes().toString().padStart(2, "0") + ":" +
+            currentDate.getSeconds().toString().padStart(2, "0");
+
+        lastClickDateElement.textContent = formattedDate;
+    }
+
+    button.addEventListener("click", handleClick);
+
+    // Select the input field by its ID
+    var inputField = document.getElementById("input");
+
+    // Select the list element by its ID
+    var listElement = document.getElementById("list");
+
+    // Function to handle input field key press
+    function handleKeyPress(event) {
+        if (event.key === "Enter") {
+            event.preventDefault(); // Prevent form submission
+
+            // Get the content of the input field
+            var inputValue = inputField.value;
+
+            // Create a new list item
+            var listItem = document.createElement("li");
+
+            // Set the content of the list item to the input value
+            listItem.textContent = inputValue;
+
+            // Append the new list item to the list element
+            listElement.appendChild(listItem);
+
+            // Clear the input field
+            inputField.value = "";
+        }
+    }
+
+    inputField.addEventListener("keypress", handleKeyPress);
+
+    // Function to handle input field input
+    function handleInputChange() {
+        // Get the content of the input field
+        var inputValue = inputField.value;
+
+        // Get the last list item in the list
+        var lastListItem = listElement.lastElementChild;
+
+        // Update the content of the last list item in real-time
+        if (lastListItem) {
+            lastListItem.textContent = inputValue;
+        }
+    }
+
+    inputField.addEventListener("input", handleInputChange);
+</script>
+
+</body>
+</html>

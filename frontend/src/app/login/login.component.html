@@ -1,0 +1,15 @@
+<!-- login.component.html -->
+<div class="login-container">
+  <h2>Login</h2>
+  <form method="post" action="http://localhost:4200/#/login">
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required [(ngModel)]="username">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required [(ngModel)]="password">
+
+    <button type="submit">Login</button>
+  </form>
+  <p *ngIf="errorMessage" id="error-message">{{ errorMessage }}</p>
+</div>
