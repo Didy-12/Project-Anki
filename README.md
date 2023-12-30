@@ -53,7 +53,7 @@ Voici un exemple apres insertion d'une lecon et des flashcard attibué.
 <img width="1440" alt="Capture d’écran 2023-12-30 à 12 35 15" src="https://github.com/Didy-12/Project-Anki/assets/120495158/e97b64ef-8bf3-40ce-b81d-fc025a66ece7">
 
 
-
+## Page de revision
 
 <img width="1440" alt="Capture d’écran 2023-12-30 à 15 45 06" src="https://github.com/Didy-12/Project-Anki/assets/120495158/9190f857-fe3c-42b7-b38c-4d801a1226e8">
 
