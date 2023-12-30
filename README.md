@@ -55,6 +55,7 @@ Voici un exemple apres insertion d'une lecon et des flashcard attibué.
 
 ## Page de revision
 
+Dans le page de revision nous pouvons visualiser les differentes lecons qui ont été crée le bouton "study" nous permet de commencer une session de revision et le bouton"Show progress nous permet d'obtenir un graphe retracant notre avancement dans les revison.
 <img width="1440" alt="Capture d’écran 2023-12-30 à 15 45 06" src="https://github.com/Didy-12/Project-Anki/assets/120495158/9190f857-fe3c-42b7-b38c-4d801a1226e8">
 
 
