@@ -33,6 +33,8 @@ La page d'inscription permet aux nouveaux utilisateurs de créer un compte. Ils 
 Sur cette page, les utilisateurs peuvent ajouter de nouvelles leçons. Ils ont la possibilité d'entrer un titre pour chaque leçon et de commencer à ajouter du contenu sous forme de flashcards.
 
 
+<img width="274" alt="Capture d’écran 2023-12-30 à 15 45 21" src="https://github.com/Didy-12/Project-Anki/assets/120495158/b92e6090-256c-4e88-b68f-f7e458ebf01b">
+
 
 
 <img width="1440" alt="Capture d’écran 2023-12-30 à 12 33 02" src="https://github.com/Didy-12/Project-Anki/assets/120495158/1986ead9-4cdc-458a-9825-43f1edced62f">
@@ -47,7 +49,7 @@ Sur cette page, les utilisateurs peuvent ajouter de nouvelles leçons. Ils ont l
 
 
 
-<img width="1440" alt="Capture d’écran 2023-12-30 à 14 22 07" src="https://github.com/Didy-12/Project-Anki/assets/120495158/76f2c11a-6994-4646-9e18-1bd80793ec1a">
+
 
 
 
