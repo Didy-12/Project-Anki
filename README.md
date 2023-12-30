@@ -48,10 +48,20 @@ Sur cette page, les utilisateurs peuvent ajouter de nouvelles leçons. Ils ont l
 
 
 
+<img width="1440" alt="Capture d’écran 2023-12-30 à 15 45 06" src="https://github.com/Didy-12/Project-Anki/assets/120495158/9190f857-fe3c-42b7-b38c-4d801a1226e8">
+
+
+<img width="1434" alt="Capture d’écran 2023-12-30 à 15 45 47" src="https://github.com/Didy-12/Project-Anki/assets/120495158/4f8850c6-8af2-4542-beaa-3fadeec080ff">
+
+
+<img width="741" alt="Capture d’écran 2023-12-30 à 15 46 23" src="https://github.com/Didy-12/Project-Anki/assets/120495158/95e81567-64df-4506-bba0-e98045bdf031">
+
+
+<img width="251" alt="Capture d’écran 2023-12-30 à 15 46 46" src="https://github.com/Didy-12/Project-Anki/assets/120495158/06c69db6-2173-492c-afb1-9aea953771c9">
 
 
 
-
+<img width="1440" alt="Capture d’écran 2023-12-30 à 15 38 58" src="https://github.com/Didy-12/Project-Anki/assets/120495158/19057c28-72f1-4f35-b713-61d30e11b049">
 
 
 
