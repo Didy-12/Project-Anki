@@ -28,8 +28,12 @@ La page de connexion est essentielle pour sécuriser l'accès à la plateforme. 
 
 La page d'inscription permet aux nouveaux utilisateurs de créer un compte. Ils doivent fournir un nom d'utilisateur qui n'existe pas deja (fonction implementé dans la base de donnée et un mot de passe pour établir leur profil sur la plateforme.
 
+![02d2d92d-c3ad-4b93-ae4f-3ad2ff018900](https://github.com/Didy-12/Project-Anki/assets/120495158/132ac24a-0c41-4274-9552-682bc9716f0e)
 
-<img width="1440" alt="Capture d’écran 2023-12-29 à 23 34 53" src="https://github.com/EsilvKH/Project_Anki/assets/120495158/7acee539-3198-4c86-9f56-109479d06de9">
+Ici nous pouvons verifier dans la base de données que les differents users ont bient ete enregistré.
+![0766fc80-5409-49ad-85b5-e5657a1ab2e6](https://github.com/Didy-12/Project-Anki/assets/120495158/285d41eb-9630-47f2-8efa-fbaac4651c67)
+
+
 
 ## Page de Création de Leçon
 
