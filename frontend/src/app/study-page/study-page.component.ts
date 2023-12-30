@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 
 interface Flashcard {
@@ -42,6 +43,10 @@ export class StudyPageComponent {
   currentLessonIndex: number | null = null;
   currentFlashcardIndex: number = 0;
   showAnswerFlag: boolean = false;
+  correctAnswersCount: number = 0;
+
+  // Nouveau: Stocker les scores pour chaque leçon
+  lessonScores: { [lessonIndex: number]: string[] } = {};
 
   constructor() {}
 
@@ -49,6 +54,7 @@ export class StudyPageComponent {
     this.currentLessonIndex = index;
     this.currentFlashcardIndex = 0;
     this.showAnswerFlag = false;
+    this.correctAnswersCount = 0;
   }
 
   getCurrentQuestion(): string {
@@ -69,15 +75,39 @@ export class StudyPageComponent {
     this.showAnswerFlag = true;
   }
 
+  markAnswer(isCorrect: boolean): void {
+    if (isCorrect) {
+      this.correctAnswersCount++;
+    }
+    this.nextQuestion();
+  }
+
   nextQuestion(): void {
     if (this.currentLessonIndex !== null) {
       if (this.currentFlashcardIndex < this.lessons[this.currentLessonIndex].flashcards.length - 1) {
         this.currentFlashcardIndex++;
         this.showAnswerFlag = false;
       } else {
-        // Reset or navigate away after the last question
+        // Enregistrer le score
+        const score = this.getScore();
+        if (!this.lessonScores[this.currentLessonIndex]) {
+          this.lessonScores[this.currentLessonIndex] = [];
+        }
+        this.lessonScores[this.currentLessonIndex].push(score);
+
+        // Réinitialiser pour la prochaine leçon
         this.currentLessonIndex = null;
+        this.correctAnswersCount = 0;
       }
     }
   }
+
+  getScore(): string {
+    if (this.currentLessonIndex !== null) {
+      const totalQuestions = this.lessons[this.currentLessonIndex].flashcards.length;
+      return ((this.correctAnswersCount / totalQuestions) * 100).toFixed(2) + '%';
+    }
+    return '';
+  }
 }
+

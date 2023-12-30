@@ -16,6 +16,9 @@
     <div *ngFor="let lesson of lessons; let i = index">
       <h3>{{ lesson.title }}</h3>
       <button (click)="studyLesson(i)">Study</button>
+      <div *ngIf="lessonScores[i]">
+        <p *ngFor="let score of lessonScores[i]">Score: {{ score }}</p>
+      </div>
     </div>
   </div>
 
@@ -24,12 +27,13 @@
       <p class="question">Q: {{ getCurrentQuestion() }}</p>
       <p *ngIf="showAnswerFlag" class="answer">A: {{ getCurrentAnswer() }}</p>
       <button (click)="showAnswer()" *ngIf="!showAnswerFlag">Show Answer</button>
-      <button (click)="nextQuestion()">Next</button>
+      <button (click)="markAnswer(true)" *ngIf="showAnswerFlag">Correct</button>
+      <button (click)="markAnswer(false)" *ngIf="showAnswerFlag">Incorrect</button>
+      <button (click)="nextQuestion()" *ngIf="!showAnswerFlag">Next</button>
     </div>
   </div>
 </div>
 
 
-<script src="script.js"></script>
 </body>
 </html>
