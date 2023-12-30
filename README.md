@@ -45,3 +45,24 @@ Sur cette page, les utilisateurs peuvent ajouter de nouvelles leçons. Ils ont l
 
 
 
+
+
+<img width="1440" alt="Capture d’écran 2023-12-30 à 14 22 07" src="https://github.com/Didy-12/Project-Anki/assets/120495158/76f2c11a-6994-4646-9e18-1bd80793ec1a">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
