@@ -64,11 +64,11 @@ En appuyant sur le bouton"study" la session de revison comment et la premier que
 En appuyant sur le bouton "Show answer" la reponse s'affiche avec la possibilité de mettre si on a bon ou faux afin que l'algorithme puisse calculer notre pourcentage de reussite.
 <img width="741" alt="Capture d’écran 2023-12-30 à 15 46 23" src="https://github.com/Didy-12/Project-Anki/assets/120495158/95e81567-64df-4506-bba0-e98045bdf031">
 
-
+Ici nous pouvons voir un exemple du scrore que nous avons eu sur la premiere session.
 <img width="251" alt="Capture d’écran 2023-12-30 à 15 46 46" src="https://github.com/Didy-12/Project-Anki/assets/120495158/06c69db6-2173-492c-afb1-9aea953771c9">
 
 
-
+En appuyant sur le bouton "Show progress" un graphe recapitulant nos resultats sur les dernieres sessions de revisons de la lecon associé permet a l'utiliksateur de savoir ou il en est au niveau de ces revisons.
 <img width="1440" alt="Capture d’écran 2023-12-30 à 15 38 58" src="https://github.com/Didy-12/Project-Anki/assets/120495158/19057c28-72f1-4f35-b713-61d30e11b049">
 
 
