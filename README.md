@@ -47,7 +47,7 @@ Sur cette page, les utilisateurs peuvent ajouter de nouvelles leçons. Ils ont l
 <img width="1440" alt="Capture d’écran 2023-12-30 à 12 33 02" src="https://github.com/Didy-12/Project-Anki/assets/120495158/1986ead9-4cdc-458a-9825-43f1edced62f">
 
 
-
+Voici un exemple apres insertion d'une lecon et des flashcard attibué.
 
 
 <img width="1440" alt="Capture d’écran 2023-12-30 à 12 35 15" src="https://github.com/Didy-12/Project-Anki/assets/120495158/e97b64ef-8bf3-40ce-b81d-fc025a66ece7">
