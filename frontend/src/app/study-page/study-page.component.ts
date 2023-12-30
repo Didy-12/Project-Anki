@@ -21,14 +21,20 @@ export class StudyPageComponent {
       title: "Physics",
       flashcards: [
         { question: "What is gravity?", answer: "Gravity is a force that attracts objects towards each other." },
-        { question: "Who discovered gravity?", answer: "Gravity was discovered by Isaac Newton." }
+        { question: "Who discovered gravity?", answer: "Gravity was discovered by Isaac Newton." },
+        // Added new questions
+        { question: "What is inertia?", answer: "Inertia is the resistance of any physical object to any change in its velocity." },
+        { question: "What is the speed of light?", answer: "The speed of light is approximately 299,792 kilometers per second." }
       ]
     },
     {
       title: "Mathematics",
       flashcards: [
         { question: "What is a prime number?", answer: "A prime number is a number greater than 1 that has no positive divisors other than 1 and itself." },
-        { question: "What is the Pythagorean theorem?", answer: "In a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides." }
+        { question: "What is the Pythagorean theorem?", answer: "In a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides." },
+        // Added new questions
+        { question: "What is the area of a circle?", answer: "The area of a circle is π times the square of its radius." },
+        { question: "What is an integer?", answer: "An integer is a whole number that can be positive, negative, or zero." }
       ]
     }
   ];

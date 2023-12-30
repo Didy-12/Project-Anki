@@ -11,7 +11,7 @@ body, html {
 }
 
 header {
-  background-color: #4CAF50;
+  background-color: #007bff;
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -38,11 +38,11 @@ header {
 }
 
 .flashcard .answer {
-  color: green;
+  color: #007bff;
 }
 
 button {
-  background-color: #4CAF50;
+  background-color: #007bff;
   color: white;
   padding: 10px 15px;
   border: none;
@@ -52,5 +52,5 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #007bff;
 }
