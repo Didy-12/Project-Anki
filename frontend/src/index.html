@@ -6,10 +6,72 @@
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+        overflow: auto;
+        padding: 0 20px;
+      }
+
+      header {
+        background: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      .content {
+        padding: 20px;
+        background: white;
+      }
+
+      .content h2, .content p {
+        margin-bottom: 10px;
+      }
+
+      .step {
+        background: #f8f8f8;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-left: 4px solid #333;
+      }
+    </style>
   </head>
 
   <body>
+
     <app-root></app-root>
-  </body>
+    <header>
+      <div class="container">
+        <h1>Bienvenue sur Anki</h1>
+      </div>
+    </header>
+
+    <div class="container content">
+      <h2>Renforcez Votre Apprentissage avec Anki</h2>
+      <p>Plongez dans une méthode d'étude révolutionnaire qui combine technologie et efficacité.</p>
+      <h3>Comment ça marche ?</h3>
+      <div class="step"><strong>Créez</strong> : Concevez des flashcards personnalisées pour une expérience d'apprentissage sur mesure.</div>
+      <div class="step"><strong>Révisez</strong> : Utilisez un système de répétition espacée pour mémoriser efficacement et durablement.</div>
+      <div class="step"><strong>Évoluez</strong> : Suivez vos progrès et adaptez votre rythme d'apprentissage à vos besoins.</div>
+      <h3>Pourquoi Anki ?</h3>
+      <p>Anki est conçu pour maximiser votre efficacité d'apprentissage. Rejoignez des milliers d'étudiants, de professionnels et de passionnés qui transforment leur façon d'apprendre.</p>
+    </div>
+    </body>
+
 
 </html>
