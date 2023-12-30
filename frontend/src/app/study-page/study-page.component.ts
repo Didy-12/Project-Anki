@@ -1,5 +1,7 @@
 
-import { Component } from '@angular/core';
+
+  import { Component, ViewChild, ElementRef } from '@angular/core';
+import Chart from 'chart.js/auto';
 
 interface Flashcard {
   question: string;
@@ -44,9 +46,13 @@ export class StudyPageComponent {
   currentFlashcardIndex: number = 0;
   showAnswerFlag: boolean = false;
   correctAnswersCount: number = 0;
-
-  // Nouveau: Stocker les scores pour chaque leçon
   lessonScores: { [lessonIndex: number]: string[] } = {};
+  showGraph: boolean = false;
+  selectedLessonForGraph: number | null = null;
+
+  @ViewChild('progressGraph') graphCanvas!: ElementRef<HTMLCanvasElement>;
+  chart: Chart | null = null;
+
 
   constructor() {}
 
@@ -88,14 +94,12 @@ export class StudyPageComponent {
         this.currentFlashcardIndex++;
         this.showAnswerFlag = false;
       } else {
-        // Enregistrer le score
         const score = this.getScore();
         if (!this.lessonScores[this.currentLessonIndex]) {
           this.lessonScores[this.currentLessonIndex] = [];
         }
         this.lessonScores[this.currentLessonIndex].push(score);
 
-        // Réinitialiser pour la prochaine leçon
         this.currentLessonIndex = null;
         this.correctAnswersCount = 0;
       }
@@ -109,5 +113,52 @@ export class StudyPageComponent {
     }
     return '';
   }
+
+  toggleGraph(lessonIndex: number): void {
+    this.selectedLessonForGraph = lessonIndex;
+    this.showGraph = !this.showGraph;
+    if (this.showGraph) {
+      setTimeout(() => this.drawGraph(), 0); // Ensure the canvas is rendered
+    }
+  }
+
+  drawGraph(): void {
+    if (this.showGraph && this.selectedLessonForGraph !== null) {
+      const scores = this.lessonScores[this.selectedLessonForGraph].map(score => parseFloat(score.replace('%', '')));
+      const labels = scores.map((_, index) => `Attempt ${index + 1}`);
+
+      if (this.chart) {
+        this.chart.destroy();
+      }
+
+      const context = this.graphCanvas.nativeElement.getContext('2d');
+      if (context) {
+        this.chart = new Chart(context, {
+          type: 'line',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Score %',
+              data: scores,
+              fill: false,
+              borderColor: 'rgb(75, 192, 192)',
+              tension: 0.1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+                max: 100
+              }
+            }
+          }
+        });
+      } else {
+        console.error('Failed to get 2D context');
+      }
+    }
+  }
+
 }
 

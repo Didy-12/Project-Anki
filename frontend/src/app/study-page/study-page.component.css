@@ -54,3 +54,50 @@ button {
 button:hover {
   background-color: #007bff;
 }
+
+/* Styles pour les leçons */
+.lessons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* Styles pour chaque leçon */
+.lesson {
+  margin-bottom: 10px;
+}
+
+/* Styles pour les boutons */
+button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles pour le container du graphique */
+.graph-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Styles pour le canvas du graphique */
+#progressGraph {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+}

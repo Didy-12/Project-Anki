@@ -13,9 +13,10 @@
   </header>
 
   <div class="lessons">
-    <div *ngFor="let lesson of lessons; let i = index">
+    <div *ngFor="let lesson of lessons; let i = index" class="lesson">
       <h3>{{ lesson.title }}</h3>
       <button (click)="studyLesson(i)">Study</button>
+      <button (click)="toggleGraph(i)">Show Progress</button>
       <div *ngIf="lessonScores[i]">
         <p *ngFor="let score of lessonScores[i]">Score: {{ score }}</p>
       </div>
@@ -31,6 +32,10 @@
       <button (click)="markAnswer(false)" *ngIf="showAnswerFlag">Incorrect</button>
       <button (click)="nextQuestion()" *ngIf="!showAnswerFlag">Next</button>
     </div>
+  </div>
+
+  <div *ngIf="showGraph" class="graph-container">
+    <canvas #progressGraph></canvas>
   </div>
 </div>
 
